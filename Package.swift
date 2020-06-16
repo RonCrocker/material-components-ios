@@ -9,16 +9,13 @@ let package = Package(
         .library(name: "MaterialComponents", targets: ["MaterialTextFields"]),
     ],
     dependencies:[
-        .package(url:"https://github.com/grupopulpo/material-text-accessibility-ios", from: "2.0.0"),
-        .package(url:"https://github.com/grupopulpo/material-internationalization-ios", from: "2.0.0")
+//        .package(url:"https://github.com/grupopulpo/material-text-accessibility-ios", from: "2.0.0"),
+//        .package(url:"https://github.com/grupopulpo/material-internationalization-ios", from: "2.0.0")
     ],
     targets: [
-        .target(name: "AvailabilityT",
-                dependencies:[],
-                path: "components/AvailabilityT"),
         .target(name: "MaterialTextFields",
                 dependencies:[
-                    .target(name:"AvailabilityT"),
+//                     .target(name:"AvailabilityT"),
                     .target(name:"AnimationTiming"),
                     .target(name:"Buttons"),
                     .target(name:"Elevation"),
@@ -138,7 +135,7 @@ let package = Package(
                 publicHeadersPath:"src"),
         .target(name: "Elevation",
                 dependencies: [
-                    .target(name:"AvailabilityT"),
+//                     .target(name:"AvailabilityT"),
                     .target(name:"Color"),
                     .target(name:"Math")
             ],
@@ -171,7 +168,7 @@ let package = Package(
                 publicHeadersPath:"src"),
         .target(name: "Ink",
                 dependencies: [
-                    .target(name: "AvailabilityT"),
+//                     .target(name: "AvailabilityT"),
                     .target(name: "Color"),
                     .target(name: "Math")
             ],
@@ -220,7 +217,7 @@ let package = Package(
                 publicHeadersPath:"src"),
         .target(name: "Color",
                 dependencies: [
-                    .target(name:"AvailabilityT")
+//                     .target(name:"AvailabilityT")
             ],
                 path: "components/private/Color/",
                 sources: [
